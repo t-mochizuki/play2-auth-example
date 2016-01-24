@@ -1,0 +1,8 @@
+# Standard
+GET     /                           controllers.Session.login
+POST    /standard/login             controllers.Session.authenticate
+GET     /standard/logout            controllers.Session.logout
+
+GET     /standard/message/:id       controllers.Message.show(id)
+GET     /standard/message           controllers.Message.index
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
